@@ -25,3 +25,6 @@ Sawtooth(f/n) multiplied by cos((f/n + x)/3) added to horizontal
 
 #### Pd (vanilla)
 Version in the Raspbian repository, 0.46.2.  Doesn't work with mushroom.pd.
+
+#### Pd-extended
+Pd‐extended is a fork of Pd Vanilla, including extra features and external libraries. It's outdated, abandoned and there's no support.
