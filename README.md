@@ -5,17 +5,21 @@ A Pure Data patch, following Jerobeam Fenderson's "How To Draw Mushrooms On An O
 
 ### Step 1
 Cos(f) on the vertical, sin(f) on the horizontal
+
 ![Step1](/Images/step1.png)
 
 ### Step 2
 Add Sawtooth(f/n) to the vertical
+
 ![Step2](/Images/step2.png)
 
 ### Step 3
 Horizontal multiplied by sin(f/n)
+
 ![Step3a](/Images/step3a.png)
 
 ...but only use the last quarter
+
 ![Step3b](/Images/step3b.png)
 
 ### Step 4
