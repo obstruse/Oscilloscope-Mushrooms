@@ -25,7 +25,11 @@ Horizontal multiplied by sin(f/n)
 ### Step 4
 Sawtooth(f/n) multiplied by cos(f/n + x) added to horizontal
 
+![Step4a](/Images/MVI_1803-90.gif)
+
 Sawtooth(f/n) multiplied by cos((f/n + x)/3) added to horizontal
+
+![Step4b](/Images/MVI_1804-90.gif)
 
 ## Installing Pure Data
 
@@ -46,8 +50,8 @@ Version 2.0 of Pd-l2ork.
 
 Downloads and instructions here: http://l2ork.music.vt.edu/main/make-your-own-l2ork/software/
 
-## Installation Errors
-Missing dependencies, for example the Ubuntu install has these errors:
+### Installation Errors
+Missing dependencies, for example the install on Ubuntu 18.04 has these errors:
 
 ```
  pd-l2ork depends on libftgl2 (>= 2.1.3~rc5); however:
@@ -58,7 +62,7 @@ Missing dependencies, for example the Ubuntu install has these errors:
   Package libpng12-0 is not installed.
 ```
 
-The installation will work, even with the errors, but it leaves the package system in a broken state.  You woun't be able to install anything else until the errors are cleared.
+The installation will work, even with the errors, but it leaves the package system in a broken state.  You won't be able to install anything else until the errors are cleared.
 
 The work-around is to remove the dependencies from the *.deb control file:
 
