@@ -1,6 +1,5 @@
-#N struct 1024-color float x float y float farbe float ynpos;
-#N struct 1431-color float x float y float farbe float ynpos;
-#N canvas 87 197 440 385 16;
+#N struct 1004-color float x float y float farbe float ynpos;
+#N canvas 259 202 440 385 16;
 #X obj 25 23 bng 59 250 50 0 step-1 empty step-1 17 -10 0 10 -262144
 -1 -1;
 #X obj 25 112 bng 59 250 50 0 step-2 empty step-2 17 -10 0 10 -262144
@@ -15,7 +14,7 @@
 -1 -1;
 #X obj 31 273 hsl 332 39 1 80 0 0 Hstretch Istretch stretch -2 -8 0
 10 -262144 -1 -1 7542 1;
-#N canvas 534 191 1019 801 presets 0;
+#N canvas 224 190 1019 824 presets 0;
 #X obj 100 26 bng 15 250 50 0 empty step-1 empty 17 7 0 10 -262144
 -1 -1;
 #X obj 228 26 bng 15 250 50 0 empty step-2 empty 17 7 0 10 -262144
@@ -29,7 +28,6 @@
 -1 -1;
 #X obj 492 26 bng 15 250 50 0 empty step-4a empty 17 7 0 10 -262144
 -1 -1;
-#X obj 502 413 mushrooms2;
 #X obj 52 244 int;
 #X floatatom 52 208 5 0 0 2 Hstretch Hstretch -, f 5;
 #X obj 52 286 send stretch;
@@ -43,47 +41,48 @@
 #X msg 64 679 \; Rdsp color 13 12;
 #X msg 151 647 \; Rdsp color 16 12;
 #X obj 52 397 int;
-#X floatatom 52 361 5 0 0 2 Hfrequency Hfrequency -, f 5;
-#X obj 52 439 send frequency;
+#X floatatom 52 361 5 0 0 2 Hloops Hloops -, f 5;
 #X obj 525 605 loadbang;
 #X msg 558 641 \; Rdsp 1;
-#X msg 529 694 \; Istretch 19 \; Ifrequency 5000;
 #X msg 492 224 step-4b \; step2 1 \; step3 1 \; step4 1 \; mushrooms
 3 \; space 3 \; wiggle 2 \;;
-#X msg 228 52 step-2 \; step2 1 \; loops 10 \; stretch 9 \; step3 0
-\; step4 0 \;;
 #X msg 492 52 step-4a \; step2 1 \; step3 1 \; step4 1 \; mushrooms
 1 \; space 1 \; wiggle 1 \;;
-#X msg 360 52 step-3a \; step2 1 \; loops 40 \; stretch 19 \; step3
+#X msg 228 52 step-2 \; step2 1 \; loops 10 \; stretch 7 \; step3 0
+\; step4 0 \;;
+#X obj 52 439 send loops;
+#X msg 529 694 \; Istretch 19 \; Iloops 40;
+#X msg 360 52 step-3a \; step2 1 \; loops 60 \; stretch 19 \; step3
 1 \; cap 0 \; step4 0 \;;
-#X msg 360 224 step-3b \; step2 1 \; loops 40 \; stretch 19 \; step3
+#X msg 360 223 step-3b \; step2 1 \; loops 60 \; stretch 19 \; step3
 1 \; cap 0.74 \; step4 0 \;;
-#X msg 362 405 step-3c \; step2 1 \; loops 40 \; stretch 19 \; step3
+#X msg 362 405 step-3c \; step2 1 \; loops 60 \; stretch 19 \; step3
 1 \; cap 1 \; step4 0 \;;
+#X obj 502 412 mushrooms;
 #X connect 0 0 4 0;
-#X connect 1 0 26 0;
-#X connect 2 0 29 0;
-#X connect 3 0 28 0;
-#X connect 5 0 25 0;
-#X connect 6 0 27 0;
-#X connect 8 0 10 0;
-#X connect 9 0 8 0;
-#X connect 11 0 30 0;
+#X connect 1 0 24 0;
+#X connect 2 0 28 0;
+#X connect 3 0 27 0;
+#X connect 5 0 22 0;
+#X connect 6 0 23 0;
+#X connect 7 0 9 0;
+#X connect 8 0 7 0;
+#X connect 10 0 29 0;
+#X connect 12 0 13 0;
+#X connect 13 0 11 0;
 #X connect 13 0 14 0;
-#X connect 14 0 12 0;
-#X connect 14 0 15 0;
-#X connect 15 0 17 0;
-#X connect 15 1 18 0;
-#X connect 19 0 21 0;
-#X connect 20 0 19 0;
-#X connect 22 0 23 0;
-#X connect 22 0 24 0;
+#X connect 14 0 16 0;
+#X connect 14 1 17 0;
+#X connect 18 0 25 0;
+#X connect 19 0 18 0;
+#X connect 20 0 21 0;
+#X connect 20 0 26 0;
 #X restore 332 221 pd presets;
 #X floatatom 384 282 5 0 0 0 - stretch -, f 5;
 #X obj 94 197 bng 59 250 50 0 step-3c empty step-3c 17 -10 0 10 -262144
 -1 -1;
 #X obj 378 25 tgl 60 0 Sdsp Rdsp DSP 9 30 0 26 -258699 -1 -33289 1
 1;
-#X obj 33 333 hsl 332 39 100 6000 0 0 Hfrequency Ifrequency frequency
--2 -8 0 10 -262144 -1 -1 27490 1;
-#X floatatom 386 342 5 0 0 0 - frequency -, f 5;
+#X obj 33 333 hsl 332 39 1 100 0 0 Hloops Iloops loops -2 -8 0 10 -262144
+-1 -1 13039 1;
+#X floatatom 386 342 5 0 0 0 - loops -, f 5;
