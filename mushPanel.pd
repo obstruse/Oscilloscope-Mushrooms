@@ -1,6 +1,6 @@
-#N struct 1050-color float x float y float farbe float ynpos;
-#N canvas 1065 241 640 480 16;
-#X obj 0 0 cnv 15 640 479 empty empty empty 20 12 0 14 #4f4f4f #404040
+#N struct 1059-color float x float y float farbe float ynpos;
+#N canvas 475 494 640 505 16;
+#X obj 0 0 cnv 15 640 479 empty empty empty 20 12 0 14 #000000 #404040
 0;
 #X obj 95 116 bng 59 250 50 0 step-1 empty 1 20 25 0 30 #ffffff #000000
 #000000;
@@ -14,9 +14,9 @@
 #000000 #000000;
 #X obj 336 198 bng 59 250 50 0 step-4b empty 4B 10 25 0 30 #fcfcfc
 #000000 #000000;
-#X obj 86 312 hsl 332 39 1 80 0 0 Hstretch Istretch stretch 125 15
-0 20 #fcfcfc #000000 #000000 7542 1;
-#N canvas 1230 107 1019 849 presets 1;
+#X obj 93 274 hsl 299 39 1 80 0 0 Hstretch Istretch stretch 125 15
+0 20 #e0e0e0 #000000 #000000 6791 1;
+#N canvas 1230 107 1019 849 presets 0;
 #X obj 100 26 bng 15 250 50 0 empty step-1 empty 17 7 0 10 #fcfcfc
 #000000 #000000;
 #X obj 228 26 bng 15 250 50 0 empty step-2 empty 17 7 0 10 #fcfcfc
@@ -79,13 +79,13 @@
 #X connect 19 0 18 0;
 #X connect 20 0 21 0;
 #X connect 20 0 26 0;
-#X restore 438 232 pd presets;
-#X floatatom 444 322 5 0 0 0 - stretch -, f 5;
+#X restore 438 215 pd presets;
+#X floatatom 438 284 5 0 0 0 - stretch -, f 5;
 #X obj 438 115 tgl 60 0 Sdsp Rdsp DSP 9 30 0 26 #fc2828 #000000 #202020
 1 1;
-#X obj 86 372 hsl 332 39 1 100 0 0 Hloops Iloops loops 135 15 0 20
-#fcfcfc #000000 #000000 13039 1;
-#X floatatom 446 381 5 0 0 0 - loops -, f 5;
+#X obj 93 331 hsl 299 39 1 100 0 0 Hloops Iloops loops 135 15 0 20
+#e0e0e0 #000000 #000000 11741 1;
+#X floatatom 438 340 5 0 0 0 - loops -, f 5;
 #X obj 95 38 cnv 15 299 60 empty empty empty 20 12 0 14 #e0e0e0 #404040
 0;
 #X text 133 57 Oscilloscope Mushrooms;
