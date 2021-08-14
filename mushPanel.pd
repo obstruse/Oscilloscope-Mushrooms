@@ -1,38 +1,40 @@
-#N struct 1004-color float x float y float farbe float ynpos;
-#N canvas 259 202 440 385 16;
-#X obj 25 23 bng 59 250 50 0 step-1 empty step-1 17 -10 0 10 -262144
--1 -1;
-#X obj 25 112 bng 59 250 50 0 step-2 empty step-2 17 -10 0 10 -262144
--1 -1;
-#X obj 93 24 bng 59 250 50 0 step-3a empty step-3a 17 -10 0 10 -262144
--1 -1;
-#X obj 93 113 bng 59 250 50 0 step-3b empty step-3b 17 -10 0 10 -262144
--1 -1;
-#X obj 160 24 bng 59 250 50 0 step-4a empty step-4a 17 -10 0 10 -262144
--1 -1;
-#X obj 160 113 bng 59 250 50 0 step-4b empty step-4b 17 -10 0 10 -262144
--1 -1;
-#X obj 31 273 hsl 332 39 1 80 0 0 Hstretch Istretch stretch -2 -8 0
-10 -262144 -1 -1 7542 1;
-#N canvas 224 190 1019 824 presets 0;
-#X obj 100 26 bng 15 250 50 0 empty step-1 empty 17 7 0 10 -262144
--1 -1;
-#X obj 228 26 bng 15 250 50 0 empty step-2 empty 17 7 0 10 -262144
--1 -1;
-#X obj 360 196 bng 15 250 50 0 empty step-3b empty 17 7 0 10 -262144
--1 -1;
-#X obj 360 26 bng 15 250 50 0 empty step-3a empty 17 7 0 10 -262144
--1 -1;
+#N struct 1037-color float x float y float farbe float ynpos;
+#N canvas 202 391 640 480 16;
+#X obj 0 0 cnv 15 640 479 empty empty empty 20 12 0 14 #9e9a9a #404040
+0;
+#X obj 85 38 bng 59 250 50 0 step-1 empty 1 20 25 0 30 #ffffff #000000
+#000000;
+#X obj 165 38 bng 59 250 50 0 step-2 empty 2 20 25 0 30 #fcfcfc #000000
+#000000;
+#X obj 245 38 bng 59 250 50 0 step-3a empty 3A 10 25 0 30 #fcfcfc #000000
+#000000;
+#X obj 245 120 bng 59 250 50 0 step-3b empty 3B 10 25 0 30 #fcfcfc
+#000000 #000000;
+#X obj 325 38 bng 59 250 50 0 step-4a empty 4A 10 25 0 30 #fcfcfc #000000
+#000000;
+#X obj 326 120 bng 59 250 50 0 step-4b empty 4B 10 25 0 30 #fcfcfc
+#000000 #000000;
+#X obj 86 312 hsl 332 39 1 80 0 0 Hstretch Istretch stretch 125 15
+0 20 #fcfcfc #000000 #000000 7542 1;
+#N canvas 1230 107 1019 849 presets 1;
+#X obj 100 26 bng 15 250 50 0 empty step-1 empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 228 26 bng 15 250 50 0 empty step-2 empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 360 196 bng 15 250 50 0 empty step-3b empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 360 26 bng 15 250 50 0 empty step-3a empty 17 7 0 10 #fcfcfc
+#000000 #000000;
 #X msg 100 52 step-1 \; step2 0 \; step3 0 \; step4 0 \;;
-#X obj 492 196 bng 15 250 50 0 empty step-4b empty 17 7 0 10 -262144
--1 -1;
-#X obj 492 26 bng 15 250 50 0 empty step-4a empty 17 7 0 10 -262144
--1 -1;
+#X obj 492 196 bng 15 250 50 0 empty step-4b empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 492 26 bng 15 250 50 0 empty step-4a empty 17 7 0 10 #fcfcfc
+#000000 #000000;
 #X obj 52 244 int;
 #X floatatom 52 208 5 0 0 2 Hstretch Hstretch -, f 5;
 #X obj 52 286 send stretch;
-#X obj 360 374 bng 15 250 50 0 empty step-3c empty 17 7 0 10 -262144
--1 -1;
+#X obj 360 374 bng 15 250 50 0 empty step-3c empty 17 7 0 10 #fcfcfc
+#000000 #000000;
 #X msg 44 727 \; pd dsp \$1;
 #X floatatom 44 532 5 0 0 2 Sdsp Sdsp -, f 5;
 #X obj 44 569 == 0;
@@ -77,12 +79,12 @@
 #X connect 19 0 18 0;
 #X connect 20 0 21 0;
 #X connect 20 0 26 0;
-#X restore 332 221 pd presets;
-#X floatatom 384 282 5 0 0 0 - stretch -, f 5;
-#X obj 94 197 bng 59 250 50 0 step-3c empty step-3c 17 -10 0 10 -262144
--1 -1;
-#X obj 378 25 tgl 60 0 Sdsp Rdsp DSP 9 30 0 26 -258699 -1 -33289 1
-1;
-#X obj 33 333 hsl 332 39 1 100 0 0 Hloops Iloops loops -2 -8 0 10 -262144
--1 -1 13039 1;
-#X floatatom 386 342 5 0 0 0 - loops -, f 5;
+#X restore 438 235 pd presets;
+#X floatatom 444 322 5 0 0 0 - stretch -, f 5;
+#X obj 246 200 bng 59 250 50 0 step-3c empty 3C 10 25 0 30 #fcfcfc
+#000000 #000000;
+#X obj 438 39 tgl 60 0 Sdsp Rdsp DSP 9 30 0 26 #fc2828 #000000 #202020
+1 1;
+#X obj 86 372 hsl 332 39 1 100 0 0 Hloops Iloops loops 135 15 0 20
+#fcfcfc #000000 #000000 13039 1;
+#X floatatom 446 381 5 0 0 0 - loops -, f 5;
