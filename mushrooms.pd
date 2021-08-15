@@ -1,4 +1,4 @@
-#N canvas 642 64 1213 1004 12;
+#N canvas 642 73 1213 1004 12;
 #X floatatom 422 74 5 0 10000 1 frequency frequency -, f 5;
 #X obj 529 177 phasor~;
 #X obj 367 572 cos~;
@@ -148,7 +148,7 @@ stem 0.23 \; loops 60 \; stretch 19 \; step2 1 \; step3 1 \; step4
 #X connect 58 0 33 0;
 #X connect 59 0 58 0;
 #X connect 60 0 73 0;
-#X connect 61 0 72 1;
+#X connect 61 0 72 2;
 #X connect 62 0 63 1;
 #X connect 62 0 67 1;
 #X connect 63 0 57 1;
@@ -162,4 +162,4 @@ stem 0.23 \; loops 60 \; stretch 19 \; step2 1 \; step3 1 \; step4
 #X connect 68 0 29 0;
 #X connect 70 0 72 0;
 #X connect 71 0 70 0;
-#X connect 73 0 72 2;
+#X connect 73 0 72 1;
