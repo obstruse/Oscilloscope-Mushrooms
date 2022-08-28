@@ -1,4 +1,4 @@
-#N canvas 642 73 1213 1004 12;
+#N canvas 707 126 1213 1004 12;
 #X floatatom 422 74 5 0 10000 1 frequency frequency -, f 5;
 #X obj 529 177 phasor~;
 #X obj 367 572 cos~;
@@ -79,11 +79,8 @@
 #X msg 697 102 startup \; frequency 5000 \; phase 90 \; cap 0.74 \;
 stem 0.23 \; loops 60 \; stretch 19 \; step2 1 \; step3 1 \; step4
 1 \; mushrooms 3 \; space 3 \; wiggle 2 \;;
-#X obj 267 770 sig~;
-#X obj 267 745 tgl 15 0 empty empty Laser\ On 17 7 0 10 #fcfcfc #000000
-#000000 0 1;
-#X obj 316 849 dac~ 4 1 2;
 #X obj 348 800 *~ -1;
+#X obj 388 853 dac~ 2 1;
 #X connect 0 0 1 0;
 #X connect 0 0 11 0;
 #X connect 1 0 44 0;
@@ -147,8 +144,8 @@ stem 0.23 \; loops 60 \; stretch 19 \; step2 1 \; step3 1 \; step4
 #X connect 57 0 61 0;
 #X connect 58 0 33 0;
 #X connect 59 0 58 0;
-#X connect 60 0 73 0;
-#X connect 61 0 72 2;
+#X connect 60 0 70 0;
+#X connect 61 0 71 1;
 #X connect 62 0 63 1;
 #X connect 62 0 67 1;
 #X connect 63 0 57 1;
@@ -160,6 +157,4 @@ stem 0.23 \; loops 60 \; stretch 19 \; step2 1 \; step3 1 \; step4
 #X connect 67 0 57 0;
 #X connect 68 0 26 0;
 #X connect 68 0 29 0;
-#X connect 70 0 72 0;
-#X connect 71 0 70 0;
-#X connect 73 0 72 1;
+#X connect 70 0 71 0;
