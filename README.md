@@ -1,5 +1,5 @@
 # Oscilloscope-Mushrooms
-![](/Images/20TQNI~X.GIF)
+![](/Images/24ZZ9U~9.GIF)
 
 Oscilloscope Mushrooms using Linux Laptop Orchestra (L2Ork/purr-data/puredata), following Jerobeam Fenderson's "How To Draw Mushrooms On An Oscilloscope With Sound" (https://www.youtube.com/watch?v=rtR63-ecUNo)
 
